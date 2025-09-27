@@ -3,12 +3,11 @@ export default function Resolved({ resolvedTask }) {
     return (
         <div>
             {
-                resolvedTask.length > 0 ? <div className="rounded-md py-3 px-4 bg-white">
+                resolvedTask.length > 0 ? <div>
                     {
                         resolvedTask?.map((singleItem, index) => (
-                            <div key={index} className="bg-green-50 my-2 py-2 px-3 rounded-md">
+                            <div key={index} className="bg-[#E0E7FF] my-2 py-6 px-3 rounded-md">
                                 <h3 className='text-xl font-semibold text-[#001931]'>{singleItem?.title}</h3>
-                                <span className="text-green-700 font-semibold mt-1 inline-block">Completed</span>
                             </div>
                         ))
                     }
